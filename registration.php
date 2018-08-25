@@ -9,7 +9,7 @@ use Rubic\CleanCheckout\Theme\ThemeRegistrar;
 ComponentRegistrar::register(
     ComponentRegistrar::MODULE,
     'Rubic_CleanCheckoutOnestep',
-    __DIR__
+    __DIR__ . '/src'
 );
 
 ThemeRegistrar::register('Rubic_CleanCheckoutOnestep', 'Onestep Theme');
