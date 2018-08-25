@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(256px, 1fr));
     grid-template-rows: max-content 1fr;
-    grid-column-gap: 4rem;
+    grid-column-gap: 25px;
 }
 
 #checkoutSteps #shipping {
