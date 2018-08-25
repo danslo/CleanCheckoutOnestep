@@ -1,0 +1,13 @@
+{
+    "name": "rubic/magento2-module-clean-checkout-onestep",
+    "type": "magento2-module",
+    "license": "MIT",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Rubic\\CleanCheckoutOnestep\\": "src/"
+        }
+    }
+}

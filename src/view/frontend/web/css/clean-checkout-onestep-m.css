@@ -1,0 +1,102 @@
+#checkout .opc-wrapper {
+    width: 100%;
+    padding: 0px;
+}
+
+#checkout .opc-wrapper .form-login {
+    padding-bottom: 0px;
+    border-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#checkout .opc-wrapper .form-shipping-address {
+    margin-top: 0px;
+}
+
+#checkout-payment-method-load .actions-toolbar,
+#checkout-step-shipping_method .actions-toolbar {
+    display: none;
+}
+
+.opc-wrapper .table-checkout-shipping-method {
+    min-width: auto;
+    width: 100%;
+}
+
+#checkout .opc-wrapper .shipping-address-item {
+    width: 100%;
+}
+
+.checkout-payment-method .step-title {
+    border-bottom: 1px solid #cccccc;
+}
+
+.opc-wrapper .step-content {
+    margin-bottom: 10px;
+}
+
+#checkoutSteps .opc-block-summary .actions-toolbar .primary.place-order,
+#checkoutSteps .opc-block-summary .actions-toolbar .primary.place-order button {
+    width: 100%;
+}
+
+#checkoutSteps .opc-block-summary .actions-toolbar .primary.place-order button {
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+#checkoutSteps .opc-block-summary .actions-toolbar .primary.place-order {
+    margin-top: 10px;
+}
+
+.opc-block-summary .payment-option._collapsible .payment-option-title {
+    border-top: 1px solid #ccc;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+.opc-block-summary .payment-option-title .action-toggle {
+    color: #006bb4;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.opc-block-summary .payment-option._collapsible .payment-option-title {
+    cursor: pointer;
+}
+
+.opc-block-summary .payment-option-content {
+    padding: 0px;
+}
+
+.opc-block-summary .actions-toolbar .primary {
+    float: right;
+    margin: 0;
+}
+
+.opc-block-summary #discount-form {
+    margin-bottom: 20px;
+}
+
+.opc-block-summary #discount-form button {
+    margin-right: 0px;
+}
+
+.opc-block-summary .payment-option-inner {
+    padding: 10px 0px;
+}
+
+.opc-wrapper .form-login,
+.opc-wrapper .form-shipping-address,
+.opc-wrapper .methods-shipping {
+    background-color: #fff;
+}
+
+.checkout-payment-method .payment-methods {
+    margin: 0px;
+}
+
+.opc-block-summary {
+    background-color: #fff;
+    padding: 0px;
+}

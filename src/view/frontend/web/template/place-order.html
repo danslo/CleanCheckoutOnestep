@@ -1,0 +1,11 @@
+<div class="actions-toolbar">
+    <div class="primary place-order">
+        <button class="action primary checkout" type="submit" data-bind="
+                        click: placeOrder,
+                        attr: {'title': $t('Place Order')},
+                        enable: isPlaceOrderActionAllowed(),
+                        css: {disabled: !isPlaceOrderActionAllowed()}">
+            <span data-bind="i18n: 'Place Order Now'"></span>
+        </button>
+    </div>
+</div>

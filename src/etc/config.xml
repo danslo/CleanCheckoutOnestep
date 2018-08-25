@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+    Copyright © 2018 Rubic. All rights reserved.
+    See LICENSE.txt for license details.
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <clean_checkout>
+            <field_order>
+                <firstname>20</firstname>
+                <lastname>30</lastname>
+                <street>40</street>
+                <country_id>50</country_id>
+                <region_id>60</region_id>
+                <city>70</city>
+                <postcode>80</postcode>
+                <telephone>90</telephone>
+            </field_order>
+        </clean_checkout>
+    </default>
+</config>

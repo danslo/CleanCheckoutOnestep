@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Checkout\Block\Checkout\LayoutProcessor">
+        <plugin name="Rubic_CleanCheckoutOnestep::modify_checkout_layout"
+                type="Rubic\CleanCheckoutOnestep\Plugin\ModifyCheckoutLayoutPlugin" sortOrder="10"/>
+    </type>
+    <type name="Magento\Checkout\Block\Checkout\TotalsProcessor">
+        <plugin name="Rubic_CleanCheckoutOnestep::sort_totals"
+                type="Rubic\CleanCheckoutOnestep\Plugin\SortTotalsPlugin" sortOrder="10"/>
+    </type>
+    <type name="Magento\Checkout\Model\DefaultConfigProvider">
+        <plugin name="Rubic_CleanCheckoutOnestep::all_payment_methods"
+                type="Rubic\CleanCheckoutOnestep\Plugin\AllPaymentMethodsPlugin" sortOrder="10"/>
+    </type>
+</config>
