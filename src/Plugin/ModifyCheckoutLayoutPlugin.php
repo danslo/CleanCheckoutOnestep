@@ -48,7 +48,7 @@ class ModifyCheckoutLayoutPlugin
     {
         return $this->arrayManager->move(
             'components/checkout/children/steps/children/billing-step/children/payment/children/afterMethods/children/discount',
-            'components/checkout/children/steps/children/summary-step/children/summary/children/discount',
+            'components/checkout/children/steps/children/summary-step/children/discount',
             $jsLayout
         );
     }
@@ -62,7 +62,7 @@ class ModifyCheckoutLayoutPlugin
     private function addPlaceOrder($jsLayout)
     {
         return $this->arrayManager->set(
-            'components/checkout/children/steps/children/summary-step/children/summary/children/placeOrder',
+            'components/checkout/children/steps/children/summary-step/children/placeOrder',
             $jsLayout,
             ['component' => 'Rubic_CleanCheckoutOnestep/js/view/place-order']
         );
