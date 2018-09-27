@@ -100,3 +100,18 @@
     background-color: #fff;
     padding: 0px;
 }
+
+.field[name="shippingAddress.firstname"],
+.field[name="shippingAddress.city"],
+.field[name="shippingAddress.country_id"] {
+    float: left;
+    width: 48%;
+}
+
+.field[name="shippingAddress.lastname"],
+.field[name="shippingAddress.postcode"],
+.field[name="shippingAddress.region_id"] {
+    float: right;
+    width: 48%;
+}
+

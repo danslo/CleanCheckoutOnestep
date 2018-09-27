@@ -16,6 +16,17 @@
                 <postcode>80</postcode>
                 <telephone>90</telephone>
             </field_order>
+            <cleanup>
+                <disable_header>1</disable_header>
+                <disable_footer>1</disable_footer>
+                <disable_copyright>1</disable_copyright>
+                <display_logo>1</display_logo>
+            </cleanup>
         </clean_checkout>
+        <checkout>
+            <options>
+                <display_billing_address_on>1</display_billing_address_on>
+            </options>
+        </checkout>
     </default>
 </config>

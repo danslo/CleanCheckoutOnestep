@@ -54,6 +54,21 @@ class ModifyCheckoutLayoutPlugin
     }
 
     /**
+     * Moves billing from payment to shipping step.
+     *
+     * @param array $jsLayout
+     * @return array
+     */
+    private function moveBilling($jsLayout)
+    {
+        return $this->arrayManager->move(
+            'components/checkout/children/steps/children/billing-step/children/payment/children/afterMethods/children/billing-address-form',
+            'components/checkout/children/steps/children/shipping-step/children/billing-address-form',
+            $jsLayout
+        );
+    }
+
+    /**
      * Adds the place order components to the summary.
      *
      * @param array $jsLayout
@@ -69,20 +84,6 @@ class ModifyCheckoutLayoutPlugin
     }
 
     /**
-     * We will handle this in the initial (shipping) column, so we can remove from billing step.
-     *
-     * @param array $jsLayout
-     * @return array
-     */
-    private function removeAddressFormsFromBillingStep($jsLayout)
-    {
-        return $this->arrayManager->remove(
-            'components/checkout/children/steps/children/billing-step/children/payment/children/payments-list/children',
-            $jsLayout
-        );
-    }
-
-    /**
      * @param LayoutProcessor $layoutProcessor
      * @param array $jsLayout
      * @return array
@@ -91,8 +92,8 @@ class ModifyCheckoutLayoutPlugin
     {
         $jsLayout = $this->moveSummary($jsLayout);
         $jsLayout = $this->moveDiscount($jsLayout);
+        //$jsLayout = $this->moveBilling($jsLayout);
         $jsLayout = $this->addPlaceOrder($jsLayout);
-        $jsLayout = $this->removeAddressFormsFromBillingStep($jsLayout);
         return $jsLayout;
     }
 }
