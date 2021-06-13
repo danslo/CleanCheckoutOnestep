@@ -10,6 +10,7 @@
         <css src="Rubic_CleanCheckoutOnestep::css/clean-checkout-onestep-l.css" media="screen and (min-width: 768px)"/>
     </head>
     <body>
+        <attribute name="class" value="clean-checkout-onestep"/>
         <referenceBlock name="checkout.root">
             <arguments>
                 <argument name="jsLayout" xsi:type="array">
