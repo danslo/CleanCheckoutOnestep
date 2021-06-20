@@ -4,7 +4,6 @@
  * See LICENSE.txt for license details.
  */
 use Magento\Framework\Component\ComponentRegistrar;
-use Rubic\CleanCheckout\Theme\ThemeRegistrar;
 
 ComponentRegistrar::register(
     ComponentRegistrar::MODULE,
@@ -12,4 +11,3 @@ ComponentRegistrar::register(
     __DIR__ . '/src'
 );
 
-ThemeRegistrar::register('Rubic_CleanCheckoutOnestep', 'Onestep Theme');

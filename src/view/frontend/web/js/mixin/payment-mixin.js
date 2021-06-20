@@ -9,7 +9,15 @@ define([
 
     return function (target) {
         return target.extend({
-            isVisible: ko.observable(true)
+            initialize: function () {
+                this._super();
+                this.isVisible(true);
+                this.isVisible.subscribe(function(newValue) {
+                    if (!newValue) {
+                        this.isVisible(true);
+                    }
+                }.bind(this));
+            }
         });
     };
 });

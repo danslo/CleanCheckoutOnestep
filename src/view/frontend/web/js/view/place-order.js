@@ -46,9 +46,15 @@ define([
          * @returns {boolean}
          */
         placeOrder: function () {
+            debugger;
             let shipping = uiRegistry.get('checkout.steps.shipping-step.shippingAddress');
             if (shipping.validateShippingInformation()) {
-                return this.getPaymentMethodComponent().placeOrder();
+                var done = shipping.setShippingInformation()
+                if (done) {
+                    done.done(function () {
+                        this.getPaymentMethodComponent().placeOrder();
+                    }.bind(this))
+                }
             }
         }
     });
